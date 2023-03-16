@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_filters',
     'apps.cards',
     'apps.decks',
+    'apps.market',
 ]
 
 MIDDLEWARE = [

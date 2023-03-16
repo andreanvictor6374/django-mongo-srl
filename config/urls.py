@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cards/', include('apps.cards.urls')),
     path('decks/', include('apps.decks.urls')),
+    path('market/', include('apps.market.urls')),
     path('', include('rest_framework.urls')),
 ]
