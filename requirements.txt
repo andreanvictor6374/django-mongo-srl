@@ -1,2 +1,5 @@
 django>=3.2,<3.3
 djongo
+djangorestframework
+django-filter==22.1
+django-rest-framework-nested
