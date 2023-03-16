@@ -79,13 +79,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'spacedlearning',
-        # 'CLIENT': {
-        #     'host': 'mongodb://mongodb:27017',
-            # 'username': 'user1',
-            # 'password': 'pass1',
-        # }
+            'ENGINE': 'djongo',
+            'NAME': 'spacedlearning',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'localhost',
+                'port': 27017,
+                'username': 'root',
+                'password': '123456',
+                'authSource': 'admin',
+                'authMechanism': 'SCRAM-SHA-1'
+            }
     }
 }
 

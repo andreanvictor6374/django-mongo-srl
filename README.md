@@ -12,3 +12,12 @@ You can see the DRF Postgres version of this [here](https://github.com/faraday-a
 `/decks/:id`
 
 `decks/:id/cards`
+
+
+## installation
+
+```shell
+python3 -m venv venv
+source venv/bin/activate
+poetry install
+```
