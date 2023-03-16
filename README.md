@@ -21,3 +21,11 @@ python3 -m venv venv
 source venv/bin/activate
 poetry install
 ```
+
+```shell
+mongosh -u "root" -p "123456" --authenticationDatabase "admin"
+use admin
+db.createCollection("spacedlearning")
+show collections
+db.spacedlearning.insert({name: "novie", age: 23})
+```
